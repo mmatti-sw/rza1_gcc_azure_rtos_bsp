@@ -43,7 +43,7 @@
                 				
                 <option id="toolchain.version" value="6.3.1.20170620"/>
                 				
-                <option id="toolchain.enable" value="false"/>
+                <option id="toolchain.enable" value="true"/>
                 			
             </storageModule>
             			
@@ -55,7 +55,7 @@
                         						
                         <toolChain id="com.renesas.cdt.managedbuild.gcc.rz.toolChain.debug.lib.406905663" name="GCC for Renesas RZ" superClass="com.renesas.cdt.managedbuild.gcc.rz.toolChain.debug.lib">
                             							
-                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.654365448" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
+                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.654365448" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.debug" valueType="enumerated"/>
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght.1842679307" name="Message length (-fmessage-length=0)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                             							
@@ -293,7 +293,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="azure/ports/cortex_a9/gnu/src/guix|src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -347,7 +347,7 @@
                 				
                 <option id="toolchain.version" value="6.3.1.20170620"/>
                 				
-                <option id="toolchain.enable" value="false"/>
+                <option id="toolchain.enable" value="true"/>
                 			
             </storageModule>
             			
@@ -359,7 +359,7 @@
                         						
                         <toolChain id="com.renesas.cdt.managedbuild.gcc.rz.toolChain.release.lib.1996508319" name="GCC for Renesas RZ" superClass="com.renesas.cdt.managedbuild.gcc.rz.toolChain.release.lib">
                             							
-                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.293620903" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size" valueType="enumerated"/>
+                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.293620903" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.most" valueType="enumerated"/>
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght.78463534" name="Message length (-fmessage-length=0)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                             							
@@ -415,7 +415,7 @@
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.endian.1961387225" name="Endianness" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.endian" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.endianness.little" valueType="enumerated"/>
                             							
-                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack.466683593" name="Warn if stack size exceeds the limit, in bytes (-Wstack-usage)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack" useByScannerDiscovery="false" value="100" valueType="string"/>
+                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack.466683593" name="Warn if stack size exceeds the limit, in bytes (-Wstack-usage)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack" useByScannerDiscovery="false" value="400" valueType="string"/>
                             							
                             <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1208524203" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
                             							
@@ -441,17 +441,19 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/arm/cmsis/inc&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_dmac/inc&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/sound/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/riic_max9856/inc&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/riic_cat9554/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_l2cc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/application/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/application/console/inc&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/application/graphics/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/application/system/inc&quot;"/>
                                     									
@@ -471,13 +473,15 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/intc/inc&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_cache/inc&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_dmac/inc&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_switch/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/ostm/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_ceu/inc&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_cmos_cam/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_i2c/inc&quot;"/>
                                     									
@@ -503,8 +507,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/fatfs/inc&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/lwip_ethernet/inc&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/pmod_lcd/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/touch/inc&quot;"/>
@@ -513,11 +515,13 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/middleware/video/inc&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_cache/inc&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/renesas/middleware/ethernet/inc}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/azure/ports/cortex_a9/gnu/inc}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/threadx/common/inc}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/threadx/inc}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/azure/ports/cortex_a9/gnu/inc&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/guix/common/inc}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -528,6 +532,8 @@
                                     <listOptionValue builtIn="false" value="-fPIC"/>
                                     								
                                 </option>
+                                								
+                                <option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.641593883" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.ansi" valueType="enumerated"/>
                                 								
                                 <inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1604883019" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
                                 							
@@ -593,7 +599,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="azure/ports/cortex_a9/gnu/src/guix|src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

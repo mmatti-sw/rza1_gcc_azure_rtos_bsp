@@ -93,7 +93,7 @@ void CopyCanvasToBackBuffer24xrgb(GX_CANVAS *canvas, GX_RECTANGLE *copy)
         pPutRow += DISPLAY_XRES;
     }
     // BSP_DCache_FlushRange(flushaddress, copy_height * DISPLAY_XRES * 4);
-    //l2x0_flush_range((uint32_t)flushaddress, (uint32_t)(flushaddress + (copy_height * DISPLAY_XRES * 4)));
+    l2x0_flush_range((uint32_t)flushaddress, (uint32_t)(flushaddress + (copy_height * DISPLAY_XRES * 4)));
 
 }
 
