@@ -43,7 +43,7 @@
                 				
                 <option id="toolchain.version" value="6.3.1.20170620"/>
                 				
-                <option id="toolchain.enable" value="true"/>
+                <option id="toolchain.enable" value="false"/>
                 			
             </storageModule>
             			
@@ -172,6 +172,8 @@
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_cache/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_dmac/inc&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_gpio/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_switch/inc&quot;"/>
                                     									
@@ -476,6 +478,8 @@
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_cache/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_dmac/inc&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_gpio/inc&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/renesas/drivers/r_switch/inc&quot;"/>
                                     									
