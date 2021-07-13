@@ -1,5 +1,5 @@
 #include "mcu_board_select.h"
-#if ((TARGET_RZA1 == TARGET_RZA1H) || (TARGET_RZA1 == TARGET_RZA1M))
+#if (TARGET_GUI_BPP == TARGET_GUI_32BPP)
 
 #include    <stdio.h>
 #include    <string.h>

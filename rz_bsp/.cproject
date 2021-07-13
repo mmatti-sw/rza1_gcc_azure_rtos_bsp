@@ -43,7 +43,7 @@
                 				
                 <option id="toolchain.version" value="6.3.1.20170620"/>
                 				
-                <option id="toolchain.enable" value="false"/>
+                <option id="toolchain.enable" value="true"/>
                 			
             </storageModule>
             			
@@ -55,7 +55,7 @@
                         						
                         <toolChain id="com.renesas.cdt.managedbuild.gcc.rz.toolChain.debug.lib.406905663" name="GCC for Renesas RZ" superClass="com.renesas.cdt.managedbuild.gcc.rz.toolChain.debug.lib">
                             							
-                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.654365448" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.debug" valueType="enumerated"/>
+                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.654365448" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght.1842679307" name="Message length (-fmessage-length=0)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                             							
@@ -112,6 +112,12 @@
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.endian.1748576326" name="Endianness" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.endian" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.endianness.little" valueType="enumerated"/>
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack.1909472167" name="Warn if stack size exceeds the limit, in bytes (-Wstack-usage)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack" useByScannerDiscovery="false" value="400" valueType="string"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.otherWarnings.1007047704" name="Other warning flags" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.otherWarnings" useByScannerDiscovery="true" valueType="stringList">
+                                								
+                                <listOptionValue builtIn="false" value="-Wno-int-conversion"/>
+                                							
+                            </option>
                             							
                             <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.338079599" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
                             							
@@ -295,7 +301,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="util|src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -361,7 +367,7 @@
                         						
                         <toolChain id="com.renesas.cdt.managedbuild.gcc.rz.toolChain.release.lib.1996508319" name="GCC for Renesas RZ" superClass="com.renesas.cdt.managedbuild.gcc.rz.toolChain.release.lib">
                             							
-                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.293620903" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.most" valueType="enumerated"/>
+                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.293620903" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.more" valueType="enumerated"/>
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght.78463534" name="Message length (-fmessage-length=0)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                             							
@@ -417,7 +423,7 @@
                             							
                             <option id="com.renesas.cdt.managedbuild.gcc.rz.option.endian.1961387225" name="Endianness" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.endian" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.endianness.little" valueType="enumerated"/>
                             							
-                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack.466683593" name="Warn if stack size exceeds the limit, in bytes (-Wstack-usage)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack" useByScannerDiscovery="false" value="400" valueType="string"/>
+                            <option id="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack.466683593" name="Warn if stack size exceeds the limit, in bytes (-Wstack-usage)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.warnStack" useByScannerDiscovery="false" value="100" valueType="string"/>
                             							
                             <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1208524203" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
                             							
@@ -537,8 +543,6 @@
                                     								
                                 </option>
                                 								
-                                <option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.641593883" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.ansi" valueType="enumerated"/>
-                                								
                                 <inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1604883019" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
                                 							
                             </tool>
@@ -603,7 +607,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="util|src/renesas/middleware/timer|src/renesas/application/r_eventControl.c|src/renesas/configuration/os_abstraction/src/r_os_abstraction_freertos.c|src/lwip-1.4.1|src/freertos" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

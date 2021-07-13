@@ -905,11 +905,11 @@ bool_t R_OS_EventWaitMutex (pevent_t pEvent, uint32_t dwTimeOut)
 				/* Failed to create mutex */
 				tx_block_release ( mutex_ptr );
 				mutex_ptr = NULL;
-				pEvent = NULL;
+				*pEvent = NULL;
 
 			} else {
 				/* Succcessfully Created Mutex */
-				pEvent = (pevent_t)mutex_ptr;
+				*pEvent = mutex_ptr;
 			}
 		}
 
