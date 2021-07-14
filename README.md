@@ -73,5 +73,3 @@ The rz_bsp has Renesas Evaluation board and MPU settings. The file is called "mc
 ## RZA1 Smart Configuration Code Generation
 
 The RZA1 Smart Configurator is a separate PC application software, it is designed for hardware engineers to resolve pin conflicts for the RZA1 and RZG1 processors. The RZA1 SC does not support code generation. ( NOTE : RZA2M Smart Configurator is a different configurator that is integrated with the e2studio IDE ). This Software design kit includes scripts that generated code based on the exported pin settings. 
-
-![image-20210503181046632](README.assets\image-20210503181046632.png)
